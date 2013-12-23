@@ -10,13 +10,10 @@
 
 ### To run:
 
-`
-npm install
-
-grunt test
-`
+`npm install`
+`grunt test`
 
 To run application in browser:
 `src/index.html`
 
-Full store could be found in my [blog post](http://myshareoftech.com/2013/12/unit-testing-react-dot-js-with-jasmine-and-karma.html)
+Full story could be found in my [blog post](http://myshareoftech.com/2013/12/unit-testing-react-dot-js-with-jasmine-and-karma.html)

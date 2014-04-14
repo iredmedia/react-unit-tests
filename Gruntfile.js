@@ -24,10 +24,7 @@ module.exports = function(grunt) {
                 configFile: 'karma.conf.js'
             }
         }
-
-
     });
-
 
     grunt.registerTask('build', ['react']);
     grunt.registerTask('test', ['build', 'karma']);

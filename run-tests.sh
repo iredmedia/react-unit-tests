@@ -4,3 +4,8 @@ sudo /etc/init.d/xvfb start
 export DISPLAY=:99
 
 grunt test
+
+python -m SimpleHTTPServer
+
+cd func_tests
+./runtests.py

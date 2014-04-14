@@ -13,6 +13,7 @@
 ### To run:
 
 `npm install`
+
 `grunt test`
 
 To run application in browser:

@@ -31,7 +31,7 @@ module.exports = function(config) {
     reporters: ['progress', 'junit'],
 
     junitReporter: {
-      outputFile: 'test-results.xml',
+      outputFile: 'func_tests/reports/karma-test-results.xml',
       suite: ''
     },
 

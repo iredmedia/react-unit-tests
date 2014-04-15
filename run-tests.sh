@@ -6,6 +6,8 @@ export DISPLAY=:99
 grunt test
 
 cp -avr src /usr/share/nginx/www/src
+cp -avr libs /usr/share/nginx/www/libs
+cp -avr jsx /usr/share/nginx/www/jsx
 
 cd func_tests
 ./runtests.py

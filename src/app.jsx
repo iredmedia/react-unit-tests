@@ -7,7 +7,7 @@ var App = React.createClass({
     render: function(){
         return (
             <div>
-                Application not is Ready
+                Application is Ready
                 <Label>Label Text</Label>
             </div>
             );

@@ -18,5 +18,5 @@ class SmokeTest(WTFBaseTest):
 
         driver.find_element_by_css_selector("p").click()
 
-        res = driver.find_elements_by_xpath("//p[contains(text(), 'Text After Click')]")
+        res = driver.find_elements_by_xpath("//p[contains(text(), 'Text  jhagsdhjsag After Click')]")
         self.assertTrue(len(res) > 0, "Control Did Not Change State")

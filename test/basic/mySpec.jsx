@@ -11,7 +11,7 @@ describe("Hello world test",function(){
 
     beforeEach(function() {
         // Setup react test utils for each 'it()' function
-        ReactTestUtils = React.addons.ReactTestUtils;
+        ReactTestUtils = React.addons.TestUtils;
     });
 
     it("should contain some text", function () {
@@ -23,7 +23,6 @@ describe("Hello world test",function(){
         // Assert that its defined, and what its text should contain!
         expect(label.refs.p).toBeDefined();
         expect(label.refs.p.props.children).toBe(someText)
-        expect(label.refs.p.props.children).not.toBe("Cat");
     });
 
     it("is clicked", function () {
@@ -33,9 +32,8 @@ describe("Hello world test",function(){
         ReactTestUtils.renderIntoDocument(label);
 
         // Click, and assert!
+        expect(label.refs.p.props.children).not.toBe("Hello World");
         ReactTestUtils.Simulate.click(label.refs.p);
         expect(label.refs.p.props.children).toBe("Hello World");
-        expect(label.refs.p.props.children).not.toBe("Cat");
     });
-
 });

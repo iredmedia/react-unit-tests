@@ -8,7 +8,7 @@ var ReactTestUtils;
 
 describe("Label Test",function(){
     beforeEach(function() {
-        ReactTestUtils = React.addons.ReactTestUtils;
+        ReactTestUtils = React.addons.TestUtils;
     });
 
 

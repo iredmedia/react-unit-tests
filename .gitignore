@@ -1,6 +1,8 @@
+func_tests/reports/
 .idea
 build
 node_modules
+bower_components
 build_jsx
 func_tests/screenshots
 results.xml

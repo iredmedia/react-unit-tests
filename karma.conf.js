@@ -13,16 +13,21 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-        'test_libs/react-with-addons.js',
-        'build_jsx/src/components/**/*.js',
-        'build_jsx/**/*Spec.js',
-        'test/**/*Spec.js'
+        'bower_components/react/react.js',   // React w/ test tools.
+        'bower_components/react/react-with-addons.js',   // React w/ test tools.
+        'build_jsx/src/components/**/*.js',              // React components compiled.
+        'build_jsx/**/*Spec.js',                         // COMPILED - Compiled asset.
+        'test/**/*Spec.js'                               // COMPILED - Non-compiled asset.
+        // 'test_libs/react-with-addons.js',   // React w/ test tools.
+        // 'build_jsx/src/components/**/*.js', // React components compiled.
+        // 'build_jsx/**/*Spec.js',            // COMPILED - Compiled asset.
+        // 'test/**/*Spec.js'                  // COMPILED - Non-compiled asset.
     ],
 
 
     // list of files to exclude
     exclude: [
-      
+
     ],
 
 

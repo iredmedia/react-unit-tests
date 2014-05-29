@@ -6,8 +6,6 @@
 
 var ReactTestUtils;
 
-console.log("TEST UTILS??????? " + React.addons.TestUtils);
-
 describe("Hello world test",function(){
     var someText = "Some Text We Need for Test";
 
@@ -25,7 +23,6 @@ describe("Hello world test",function(){
         // Assert that its defined, and what its text should contain!
         expect(label.refs.p).toBeDefined();
         expect(label.refs.p.props.children).toBe(someText)
-        expect(label.refs.p.props.children).not.toBe("Cat");
     });
 
     it("is clicked", function () {
@@ -35,9 +32,8 @@ describe("Hello world test",function(){
         ReactTestUtils.renderIntoDocument(label);
 
         // Click, and assert!
+        expect(label.refs.p.props.children).not.toBe("Hello World");
         ReactTestUtils.Simulate.click(label.refs.p);
         expect(label.refs.p.props.children).toBe("Hello World");
-        expect(label.refs.p.props.children).not.toBe("Cat");
     });
-
 });

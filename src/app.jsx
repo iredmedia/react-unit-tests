@@ -6,9 +6,9 @@ var App = React.createClass({
     render: function(){
         return (
             <div>
-                Application is Ready
-                <Label>Label Text</Label>
-                <HelloWorld>Label Text</HelloWorld>
+                {"Application is Ready"}
+                <Label>{"Label Text"}</Label>
+                <HelloWorld>{"This will fail at first, then work"}</HelloWorld>
             </div>
         );
     }

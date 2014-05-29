@@ -10,9 +10,7 @@ var HelloWorld = React.createClass({
     },
 
     render: function () {
-        return (
-            <p ref="p" onClick={this.handleClick}>{this.props.children}</p>
-        );
+        return (<p ref="p" onClick={this.handleClick}>{this.props.children}</p>);
     }
 });
 
